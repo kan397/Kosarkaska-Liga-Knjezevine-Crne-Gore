@@ -1,21 +1,200 @@
-<section id="tabela">
-    <div style="background:linear-gradient(135deg,#003b8e,#1e88e5);color:white;text-align:center;padding:50px 20px;">
-        <h2 style="margin:0;font-size:40px;">Tabela Prvenstva</h2>
-        <p style="font-size:20px;">Košarkaška Liga Knjaževine Crne Gore</p>
-    </div>
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela - Košarkaška Liga Knjaževine Crne Gore</title>
 
-    <table style="width:90%;margin:30px auto;border-collapse:collapse;background:white;box-shadow:0 0 15px rgba(0,0,0,0.15);">
-        <tr style="background:#0057b8;color:white;">
-            <th style="padding:15px;">#</th>
-            <th style="padding:15px;">Klub</th>
-            <th style="padding:15px;">B</th>
-        </tr>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        <tr><td style="padding:12px;text-align:center;">1</td><td>Bjeliši</td><td style="text-align:center;">15</td></tr>
-        <tr><td style="padding:12px;text-align:center;">2</td><td>Planinari</td><td style="text-align:center;">12</td></tr>
-        <tr><td style="padding:12px;text-align:center;">3</td><td>Mehinagići</td><td style="text-align:center;">9</td></tr>
-        <tr><td style="padding:12px;text-align:center;">4</td><td>Devici</td><td style="text-align:center;">6</td></tr>
-        <tr><td style="padding:12px;text-align:center;">5</td><td>Bratstvo</td><td style="text-align:center;">3</td></tr>
-        <tr><td style="padding:12px;text-align:center;">6</td><td>Sutjeska Centar</td><td style="text-align:center;">0</td></tr>
-    </table>
-</section>
+body{
+    background:#f4f7fb;
+}
+
+/* Naslov */
+header{
+    background:linear-gradient(90deg,#0d1b5e,#1565c0);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Tabela */
+
+.container{
+    width:95%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+th{
+    background:#1565c0;
+    color:white;
+    padding:16px;
+    font-size:18px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+td:nth-child(2){
+    text-align:left;
+    font-weight:bold;
+}
+
+tr:nth-child(even){
+    background:#f5f9ff;
+}
+
+tr:hover{
+    background:#dbeaff;
+}
+
+@media(max-width:768px){
+
+.container{
+overflow-x:auto;
+}
+
+table{
+min-width:700px;
+}
+
+header h1{
+font-size:28px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Košarkaška Liga Knjaževine Crne Gore</h1>
+<p>Zvanična tabela prvenstva</p>
+</header>
+
+<div class="container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>#</th>
+<th>Klub</th>
+<th>U</th>
+<th>P</th>
+<th>N</th>
+<th>I</th>
+<th>+/-</th>
+<th>Bod</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>Bjeliši</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Planinari</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Devići</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Mehinagići</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Sutjeska Centar</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Bratstvo</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>
